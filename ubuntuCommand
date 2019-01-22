@@ -1,0 +1,3 @@
+## atom에서 방문권한이 없을시
+sudo chown -R root:webserver1 /var/www
+sudo chmod 775 -R /var/www
