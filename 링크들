@@ -2,4 +2,5 @@
 https://sir.kr/g5_pds/3220
 
 //mysql8 - ubuntu 18.04 x64
-https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-server_8.0.14-1ubuntu18.04_amd64.deb-bundle.tar
+//https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-server_8.0.14-1ubuntu18.04_amd64.deb-bundle.tar
+https://repo.mysql.com//mysql-apt-config_0.8.12-1_all.deb
