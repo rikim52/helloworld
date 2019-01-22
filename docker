@@ -1,0 +1,20 @@
+sudo apt-get install docker
+
+docker images
+
+docker pull ubuntu:14.04
+
+--ubuntu:14.04버전을 등록한다
+docker run -i -t ubuntu:14.04 /bin/bash
+
+--현재 등록되어있는 가상머신의 정보를 읽어온다
+docker ps -a
+
+--현재 돌아가는 가상머신의 정보를 읽어온다
+docker ps
+
+--이미 등록되어 있는 zen_northcutt라는 가상머신을 돌군다
+docker start zen_northcutt
+
+--exit하면 꺼지는데 이렇게 하면 그냥 나온다 
+Ctrl+P+Q 
