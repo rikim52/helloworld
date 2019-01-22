@@ -1,18 +1,41 @@
+
+---------setup git
 sudo apt-get install git
 git config --global user.name "rikim52"
 git config --global user.email "rikim52@hotmail.com"
-
+-----------
 --폴더 생성
 git init Mytest
 
 cd Mytest
 vim simple.c
 
+----------- push git
 git add simple.c
 git commit -m "message"
 
 --Create repository on Github and get the ssh or https url
 git remote add origin https://github.com/rikim52/Mytest.git
 git push origin master
+
+
+
+--------------------------------------------------------
+-- create ssh key
+--------------------------------------------------------
+--https://www.itfanr.cc/2017/03/03/using-ssh-key-connection-github-in-linux/
+ssh-keygen -t rsa -C "rikim52@hotmail.com"
+
+--생성된 id_rsa.pub조회
+cd ~/.ssh
+vim id_rsa.pub
+--id_rsa.pub내용을 복사해서 github 의 setting에 붙여넣고 생성하기-
+--생성된 키를 테스트하기
+ssh -T git@github.com
+yes
+--Hi rikim52! You've successfully authenticated, but GitHub does not provide shell access.
+--위 메세지 생성시 성공 ok
+
+
 
 
