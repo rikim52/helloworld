@@ -18,7 +18,14 @@ git commit -m "message"
 git remote add origin https://github.com/rikim52/Mytest.git
 git push origin master
 
+---------------- change remote origin url
+git remote -v
+git remote set-url origin git@github.com:rikim52/Mytest.git
 
+
+------------------------- clone 
+cd Mytest
+git clone Mytest
 
 --------------------------------------------------------
 -- create ssh key
