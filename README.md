@@ -1,5 +1,1 @@
-# helloworld
-it is my first repository.
-#include something.
-and description something. and typing some coding.
-yes. it's done.
+여기는 자주 사용되는 쿼리나 , 셋팅시의 메모들입니다.
