@@ -1,0 +1,24 @@
+# edit mysql default port
+vim /etc/mysql/mysql.conf.d/mysqld.cnf
+
+# add new database user and give auth
+###############################################################################################
+# mysql5
+grant all on mp4korea.* to mp4korea@'localhost' identified by 'Mp4korea1234!@#$';
+
+
+###############################################################################################
+# mysql8
+create user 'manhua'@'localhost' identified by 'manhua1234!@#$';
+
+grant all privileges on manhua.* to 'manhua'@'localhost';
+
+Create database mp4korea default character set utf8 collate utf8_general_ci;
+
+
+
+set sql_safe_updates=0;
+
+###############################################################################################
+Database Backup
+mysqldump -h localhost -P 33308 -u root -p manhua > d:/man1.sql
