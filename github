@@ -1,0 +1,18 @@
+sudo apt-get install git
+git config --global user.name "rikim52"
+git config --global user.email "rikim52@hotmail.com"
+
+--폴더 생성
+git init Mytest
+
+cd Mytest
+vim simple.c
+
+git add simple.c
+git commit -m "message"
+
+--Create repository on Github and get the ssh or https url
+git remote add origin https://github.com/rikim52/Mytest.git
+git push origin master
+
+
